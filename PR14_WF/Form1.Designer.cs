@@ -34,12 +34,13 @@
 			this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Tables_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Rooms_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.Students_data = new System.Windows.Forms.BindingSource(this.components);
-			this.studentsDataSet = new PR14_WF.StudentsDataSet();
 			this.Privelege_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Students_MenuItems = new System.Windows.Forms.ToolStripMenuItem();
 			this.просмотрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Setting_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.Students_data = new System.Windows.Forms.BindingSource(this.components);
+			this.studentsDataSet = new PR14_WF.StudentsDataSet();
+			this.requestMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Main_menu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Students_data)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.studentsDataSet)).BeginInit();
@@ -51,7 +52,8 @@
 			this.Main_menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.File_MenuItem,
             this.Tables_MenuItem,
-            this.просмотрToolStripMenuItem});
+            this.просмотрToolStripMenuItem,
+            this.requestMenuItem});
 			this.Main_menu.Location = new System.Drawing.Point(0, 0);
 			this.Main_menu.Name = "Main_menu";
 			this.Main_menu.Size = new System.Drawing.Size(494, 28);
@@ -85,31 +87,21 @@
 			// Rooms_MenuItem
 			// 
 			this.Rooms_MenuItem.Name = "Rooms_MenuItem";
-			this.Rooms_MenuItem.Size = new System.Drawing.Size(216, 26);
+			this.Rooms_MenuItem.Size = new System.Drawing.Size(148, 26);
 			this.Rooms_MenuItem.Text = "Комнаты";
 			this.Rooms_MenuItem.Click += new System.EventHandler(this.Rooms_MenuItem_Click);
-			// 
-			// Students_data
-			// 
-			this.Students_data.DataSource = this.studentsDataSet;
-			this.Students_data.Position = 0;
-			// 
-			// studentsDataSet
-			// 
-			this.studentsDataSet.DataSetName = "StudentsDataSet";
-			this.studentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// Privelege_MenuItem
 			// 
 			this.Privelege_MenuItem.Name = "Privelege_MenuItem";
-			this.Privelege_MenuItem.Size = new System.Drawing.Size(216, 26);
+			this.Privelege_MenuItem.Size = new System.Drawing.Size(148, 26);
 			this.Privelege_MenuItem.Text = "Льготы";
 			this.Privelege_MenuItem.Click += new System.EventHandler(this.Privelege_MenuItem_Click);
 			// 
 			// Students_MenuItems
 			// 
 			this.Students_MenuItems.Name = "Students_MenuItems";
-			this.Students_MenuItems.Size = new System.Drawing.Size(216, 26);
+			this.Students_MenuItems.Size = new System.Drawing.Size(148, 26);
 			this.Students_MenuItems.Text = "Студенты";
 			this.Students_MenuItems.Click += new System.EventHandler(this.Students_MenuItems_Click);
 			// 
@@ -124,9 +116,26 @@
 			// Setting_MenuItem
 			// 
 			this.Setting_MenuItem.Name = "Setting_MenuItem";
-			this.Setting_MenuItem.Size = new System.Drawing.Size(216, 26);
+			this.Setting_MenuItem.Size = new System.Drawing.Size(164, 26);
 			this.Setting_MenuItem.Text = "Расселение";
 			this.Setting_MenuItem.Click += new System.EventHandler(this.Setting_MenuItem_Click);
+			// 
+			// Students_data
+			// 
+			this.Students_data.DataSource = this.studentsDataSet;
+			this.Students_data.Position = 0;
+			// 
+			// studentsDataSet
+			// 
+			this.studentsDataSet.DataSetName = "StudentsDataSet";
+			this.studentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// requestMenuItem
+			// 
+			this.requestMenuItem.Name = "requestMenuItem";
+			this.requestMenuItem.Size = new System.Drawing.Size(82, 24);
+			this.requestMenuItem.Text = "Запросы";
+			this.requestMenuItem.Click += new System.EventHandler(this.requestMenuItem_Click);
 			// 
 			// Form1
 			// 
@@ -159,6 +168,7 @@
 		private System.Windows.Forms.ToolStripMenuItem Students_MenuItems;
 		private System.Windows.Forms.ToolStripMenuItem просмотрToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem Setting_MenuItem;
+		private System.Windows.Forms.ToolStripMenuItem requestMenuItem;
 	}
 }
 

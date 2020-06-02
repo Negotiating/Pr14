@@ -37,5 +37,12 @@ namespace PR14_WF
 			setting_form.Text = "Расселение";
 			setting_form.ShowDialog();
 		}
+
+		private void requestMenuItem_Click(object sender, EventArgs e)
+		{
+			RequestForm request_form = new RequestForm();
+			request_form.Text = "Запросы";
+			request_form.ShowDialog();
+		}
 	}
 }
