@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Data.OleDb;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PR14_WF
@@ -24,7 +18,7 @@ namespace PR14_WF
 			sql_connection.Open();
 			string str = "";
 			if (full_info_radio_button.Checked) str = "SELECT * FROM students";
-			if (short_info_radio_button.Checked) str = "SELECT SNP, Group, Adress FROM students";
+			if (short_info_radio_button.Checked) str = "SELECT SNP, Group, Address FROM students";
 			if (group_list_radio_button.Checked) str = "SELECT DISTINCT Group FROM students";
 			if (number_of_flour_radio_button.Checked) str = "SELECT * FROM rooms where Flour=3";
 			if (PO_list_radio_button.Checked) str = "SELECT * FROM students where students.Group like 'ПО%'";
@@ -34,7 +28,7 @@ namespace PR14_WF
 			{
 				oda.Fill(dt);
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
