@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.Reporting.WinForms;
 using System.Windows.Forms;
 
 namespace PR14_WF
