@@ -44,5 +44,12 @@ namespace PR14_WF
 			request_form.Text = "Запросы";
 			request_form.ShowDialog();
 		}
+
+		private void reportsMenuItem_Click(object sender, EventArgs e)
+		{
+			ReportsForm reports_form = new ReportsForm();
+			reports_form.Text = "Отчет";
+			reports_form.ShowDialog();
+		}
 	}
 }

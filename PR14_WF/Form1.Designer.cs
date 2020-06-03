@@ -38,9 +38,10 @@
 			this.Students_MenuItems = new System.Windows.Forms.ToolStripMenuItem();
 			this.просмотрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Setting_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.requestMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Students_data = new System.Windows.Forms.BindingSource(this.components);
 			this.studentsDataSet = new PR14_WF.StudentsDataSet();
-			this.requestMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.reportsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Main_menu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Students_data)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.studentsDataSet)).BeginInit();
@@ -53,7 +54,8 @@
             this.File_MenuItem,
             this.Tables_MenuItem,
             this.просмотрToolStripMenuItem,
-            this.requestMenuItem});
+            this.requestMenuItem,
+            this.reportsMenuItem});
 			this.Main_menu.Location = new System.Drawing.Point(0, 0);
 			this.Main_menu.Name = "Main_menu";
 			this.Main_menu.Size = new System.Drawing.Size(494, 28);
@@ -120,6 +122,13 @@
 			this.Setting_MenuItem.Text = "Расселение";
 			this.Setting_MenuItem.Click += new System.EventHandler(this.Setting_MenuItem_Click);
 			// 
+			// requestMenuItem
+			// 
+			this.requestMenuItem.Name = "requestMenuItem";
+			this.requestMenuItem.Size = new System.Drawing.Size(82, 24);
+			this.requestMenuItem.Text = "Запросы";
+			this.requestMenuItem.Click += new System.EventHandler(this.requestMenuItem_Click);
+			// 
 			// Students_data
 			// 
 			this.Students_data.DataSource = this.studentsDataSet;
@@ -130,12 +139,12 @@
 			this.studentsDataSet.DataSetName = "StudentsDataSet";
 			this.studentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
-			// requestMenuItem
+			// reportsMenuItem
 			// 
-			this.requestMenuItem.Name = "requestMenuItem";
-			this.requestMenuItem.Size = new System.Drawing.Size(82, 24);
-			this.requestMenuItem.Text = "Запросы";
-			this.requestMenuItem.Click += new System.EventHandler(this.requestMenuItem_Click);
+			this.reportsMenuItem.Name = "reportsMenuItem";
+			this.reportsMenuItem.Size = new System.Drawing.Size(71, 24);
+			this.reportsMenuItem.Text = "Отчеты";
+			this.reportsMenuItem.Click += new System.EventHandler(this.reportsMenuItem_Click);
 			// 
 			// Form1
 			// 
@@ -169,6 +178,7 @@
 		private System.Windows.Forms.ToolStripMenuItem просмотрToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem Setting_MenuItem;
 		private System.Windows.Forms.ToolStripMenuItem requestMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem reportsMenuItem;
 	}
 }
 
