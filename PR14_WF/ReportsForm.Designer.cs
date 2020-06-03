@@ -29,26 +29,42 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+			this.components = new System.ComponentModel.Container();
+			Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
 			this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-			this.studentsDataSet1 = new PR14_WF.StudentsDataSet();
-			((System.ComponentModel.ISupportInitialize)(this.studentsDataSet1)).BeginInit();
+			this.StudentsDataSet = new PR14_WF.StudentsDataSet();
+			this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.studentsTableAdapter = new PR14_WF.StudentsDataSetTableAdapters.studentsTableAdapter();
+			((System.ComponentModel.ISupportInitialize)(this.StudentsDataSet)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// reportViewer1
 			// 
 			this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.reportViewer1.LocalReport.DisplayName = "studentDataSet1";
-			this.reportViewer1.LocalReport.ReportPath = "reportsg.rdlc";
+			reportDataSource2.Name = "Report";
+			reportDataSource2.Value = this.studentsBindingSource;
+			this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+			this.reportViewer1.LocalReport.ReportEmbeddedResource = "PR14_WF.students_report.rdlc";
 			this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-			this.reportViewer1.Name = "ReportViewer";
+			this.reportViewer1.Name = "reportViewer1";
+			this.reportViewer1.ServerReport.BearerToken = null;
 			this.reportViewer1.Size = new System.Drawing.Size(651, 450);
 			this.reportViewer1.TabIndex = 0;
 			// 
-			// studentsDataSet1
+			// StudentsDataSet
 			// 
-			this.studentsDataSet1.DataSetName = "StudentsDataSet";
-			this.studentsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			this.StudentsDataSet.DataSetName = "StudentsDataSet";
+			this.StudentsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
+			// studentsBindingSource
+			// 
+			this.studentsBindingSource.DataMember = "students";
+			this.studentsBindingSource.DataSource = this.StudentsDataSet;
+			// 
+			// studentsTableAdapter
+			// 
+			this.studentsTableAdapter.ClearBeforeFill = true;
 			// 
 			// ReportsForm
 			// 
@@ -59,15 +75,16 @@
 			this.Name = "ReportsForm";
 			this.Text = "ReportsForm";
 			this.Load += new System.EventHandler(this.ReportsForm_Load);
-			((System.ComponentModel.ISupportInitialize)(this.studentsDataSet1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.StudentsDataSet)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private System.ComponentModel.BackgroundWorker backgroundWorker1;
 		private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-		private StudentsDataSet studentsDataSet1;
+		private System.Windows.Forms.BindingSource studentsBindingSource;
+		private StudentsDataSet StudentsDataSet;
+		private StudentsDataSetTableAdapters.studentsTableAdapter studentsTableAdapter;
 	}
 }

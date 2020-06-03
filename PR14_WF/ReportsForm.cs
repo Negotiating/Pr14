@@ -13,11 +13,8 @@ namespace PR14_WF
 
 		private void ReportsForm_Load(object sender, EventArgs e)
 		{
-			reportViewer1.ProcessingMode = ProcessingMode.Local;
-			reportViewer1.LocalReport.ReportPath = (@"students_report.rdlc");
-			ReportDataSource datasource = new ReportDataSource("StudentsDataSet", this.studentsDataSet1.Tables["students"]);//скорее всего проблема здесь
-			reportViewer1.LocalReport.DataSources.Clear();
-			reportViewer1.LocalReport.DataSources.Add(datasource);
+			// TODO: данная строка кода позволяет загрузить данные в таблицу "StudentsDataSet.students". При необходимости она может быть перемещена или удалена.
+			this.studentsTableAdapter.Fill(this.StudentsDataSet.students);
 			this.reportViewer1.RefreshReport();
 		}
 	}

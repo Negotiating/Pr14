@@ -6,23 +6,23 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.25237cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.52075cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="Textbox14">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Room</Value>
+                              <Value>Комната</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -35,7 +35,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -57,7 +57,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.52075cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -105,7 +105,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>2.5cm</Size>
+                <Size>3.25237cm</Size>
                 <CellContents>
                   <Textbox Name="Textbox11">
                     <CanGrow>true</CanGrow>
@@ -114,7 +114,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>SNP</Value>
+                            <Value>ФИО</Value>
                             <Style>
                               <FontSize>11pt</FontSize>
                               <FontWeight>Bold</FontWeight>
@@ -149,7 +149,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>3.25237cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox9">
                         <CanGrow>true</CanGrow>
@@ -158,7 +158,7 @@
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Birth day</Value>
+                                <Value>Дата рождения</Value>
                                 <Style>
                                   <FontSize>11pt</FontSize>
                                   <FontWeight>Bold</FontWeight>
@@ -193,7 +193,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>3.25237cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox7">
                             <CanGrow>true</CanGrow>
@@ -202,7 +202,7 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Gender</Value>
+                                    <Value>Пол</Value>
                                     <Style>
                                       <FontSize>11pt</FontSize>
                                       <FontWeight>Bold</FontWeight>
@@ -237,7 +237,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>3.25237cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox5">
                                 <CanGrow>true</CanGrow>
@@ -246,7 +246,7 @@
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Address</Value>
+                                        <Value>Адрес</Value>
                                         <Style>
                                           <FontSize>11pt</FontSize>
                                           <FontWeight>Bold</FontWeight>
@@ -281,16 +281,16 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>3.25237cm</Size>
                                 <CellContents>
-                                  <Textbox Name="Textbox3">
+                                  <Textbox Name="Textbox13">
                                     <CanGrow>true</CanGrow>
                                     <KeepTogether>true</KeepTogether>
                                     <Paragraphs>
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>Group</Value>
+                                            <Value>Группа</Value>
                                             <Style>
                                               <FontSize>11pt</FontSize>
                                               <FontWeight>Bold</FontWeight>
@@ -303,7 +303,7 @@
                                         </Style>
                                       </Paragraph>
                                     </Paragraphs>
-                                    <rd:DefaultName>Textbox3</rd:DefaultName>
+                                    <rd:DefaultName>Textbox13</rd:DefaultName>
                                     <Style>
                                       <Border>
                                         <Style>None</Style>
@@ -346,7 +346,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>2.5cm</Size>
+                <Size>3.25237cm</Size>
                 <CellContents>
                   <Textbox Name="SNP">
                     <CanGrow>true</CanGrow>
@@ -397,7 +397,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>3.25237cm</Size>
                     <CellContents>
                       <Textbox Name="Birth_day">
                         <CanGrow>true</CanGrow>
@@ -448,7 +448,7 @@
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>3.25237cm</Size>
                         <CellContents>
                           <Textbox Name="Gender">
                             <CanGrow>true</CanGrow>
@@ -499,7 +499,7 @@
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>3.25237cm</Size>
                             <CellContents>
                               <Textbox Name="Address">
                                 <CanGrow>true</CanGrow>
@@ -550,7 +550,7 @@
                                 </SortExpression>
                               </SortExpressions>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>3.25237cm</Size>
                                 <CellContents>
                                   <Textbox Name="Group">
                                     <CanGrow>true</CanGrow>
@@ -603,16 +603,53 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Report</DataSetName>
-        <Height>1.2cm</Height>
-        <Width>15cm</Width>
+        <Top>2.21403cm</Top>
+        <Height>3.0415cm</Height>
+        <Width>19.5142cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Отчет "Расселение студентов по комнатам"</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox15</rd:DefaultName>
+        <Top>0.35137cm</Top>
+        <Left>2.59503cm</Left>
+        <Height>0.6cm</Height>
+        <Width>14.3745cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>2.06911in</Height>
     <Style>
       <Border>
         <Color>Blue</Color>
@@ -620,7 +657,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>6.5in</Width>
+  <Width>7.68276in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
